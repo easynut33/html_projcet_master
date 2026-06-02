@@ -1849,8 +1849,33 @@ footer p {
         gap: 0;
     }
 
+    #page2 .container {
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    .sandbox-container {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 2rem;
+    }
+
     .sandbox-tabs {
         overflow-x: hidden;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        margin-bottom: 1.5rem;
+    }
+
+    .sandbox-body {
+        padding: 0;
+    }
+
+    .sandbox-content {
+        gap: 1.5rem;
     }
 
     .sandbox-control-panel {
