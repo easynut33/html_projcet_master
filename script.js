@@ -1225,7 +1225,9 @@ $(document).ready(function() {
 
     // 전역 창크기 변경 시 Canvas 물리 픽셀 드로잉 보정 갱신
     $(window).on("resize", function() {
-        if (currentSandboxProjectIndex === 2) {
+        if (currentSandboxProjectIndex === 0) {
+            drawHeap();
+        } else if (currentSandboxProjectIndex === 2) {
             resizeSnakeCanvas();
             if (!snakeIsRunning) {
                 drawSnakeGameInitial();
